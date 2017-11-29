@@ -1,6 +1,3 @@
-# React-structure for me  
-Using React.js for front-end  
-Using Webpack for server  
-Using Babel for jsx  
+# React Redux, practice more!
 
-Everyting on Node.js
+Bug fix going on.  
