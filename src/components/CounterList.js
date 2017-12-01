@@ -1,32 +1,34 @@
 import React from 'react';
 import Counter from './Counter';
 import PropTypes from 'prop-types';
+import { List } from 'immutable';
 
-const CounterListStyle = {
-    marginTop: "2rem",
-    display: "flex",
-    justifyContent: "center",
-    flexWrap: "wrap"
-}
+import './CounterList.css';
 
-const CounterList = ({ counters, onIncrement, onDecrement, onSetColor }) => {
+const CounterList = ({counters, onIncrement, onDecrement, onSetColor}) => {
+
     const counterList = counters.map(
-        (counter, i) => {
-            <Counter key={ i } index={ i } onIncrement={ onIncrement } onDecremen={ onDecrement } onSetColor={ onSetColor }/>
-        }
+        (counter, i) => (
+            <Counter 
+                key={i}
+                index={i}
+                {...counter.toJS()}
+                onIncrement={onIncrement}
+                onDecrement={onDecrement}
+                onSetColor={onSetColor}
+            />
+        )
     );
-    return(
-        <div style={ CounterListStyle }>
-            { counterList }
+
+    return (
+        <div className="CounterList">
+            {counterList}
         </div>
     );
 };
 
 CounterList.propTypes = {
-    counters: PropTypes.arrayOf(PropTypes.shape({
-        color: PropTypes.string,
-        number: PropTypes.number
-    })),
+    counters: PropTypes.instanceOf(List),
     onIncrement: PropTypes.func,
     onDecrement: PropTypes.func,
     onSetColor: PropTypes.func
