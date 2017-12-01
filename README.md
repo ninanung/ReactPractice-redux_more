@@ -1,18 +1,12 @@
-# redux-counter
+# React Redux practice
 
-리덕스 기초부터 ImmutableJS, ducks 구조와 redux-actions 를 통한 손쉬운 액션관리까지 다루는 프로젝트
-
-[튜토리얼](https://velopert.com/3365)
-
-각 섹션별로 branch / tag 가 생성되어있습니다.
-
-## branch
-
-- basic-counter: 리덕스 기초를 배우면서 만든 단일 카운터
-- multi-counter: 조금 더 복잡해진 상태를 다루는 멀티 카운터
-- immutable: ImmutableJS 를 적용하여 더욱 쉬워진 상태관리
-- ducks: Ducks 구조와 redux-actions 를 통한 쉬워진 액션관리
-
-## tag
-
-태그는 각 챕터당 모든 섹션마다 만들어져있습니다.
+This is simple(not for me) counting color changer.  
+![start](http://postfiles7.naver.net/MjAxNzEyMDFfMjkx/MDAxNTEyMTE2ODMyNzk1.bHLi7ujejCZrUUmyUkJR5KEaRrtCRIcpoMjHtX1IOckg.RixT_Xoq96exJwX41mv4XPP6Hv-IMHISAzM5HAUaCWsg.PNG.ninanung/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2017-12-01_17.24.47.png?type=w773)  
+Press "생성"button, make one more random color circle. But number is '1'.  
+![more](http://postfiles12.naver.net/MjAxNzEyMDFfMjA2/MDAxNTEyMTE2ODMyNzk5.Vy99ZZRJcdSGkK1zLoTG9WmJs8Df69ncHEj0D2xxFMAg.XA1xtFJHYN5mKnI9lo5eP6HfWzhfOW6OSf-hqJjHTw8g.PNG.ninanung/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2017-12-01_17.25.18.png?type=w773)  
+Press "제거"button will delete always right end circle. No image for this.  
+![last](http://postfiles6.naver.net/MjAxNzEyMDFfMTA2/MDAxNTEyMTE2ODMyODY0.o4qu9uAaQdNL8loc6xgYrvTUKieOOCsdBaZUxtHYCQgg.ymHCuTvoLpr0wkx9WFkvo1QAl3A2ifpL57_n1nFZQq8g.PNG.ninanung/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2017-12-01_17.25.46.png?type=w773)  
+Press circle.  
+single left mouse click -> number+1
+single right mouse click -> number-1  
+double left mouse clikc -> randomly change color  
